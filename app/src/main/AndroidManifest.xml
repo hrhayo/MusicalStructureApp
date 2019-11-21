@@ -11,16 +11,21 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".NowPlayingActivity"
-            android:label="Now Playing"></activity>
+            android:label="Now Playing"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".SongsActivity"
-            android:label="Songs" />
+            android:label="Songs"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AlbumsActivity"
-            android:label="Albums" />
+            android:label="Albums"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PlaylistActivity"
-            android:label="Playlist" />
+            android:label="Playlist"
+            android:parentActivityName=".MainActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
